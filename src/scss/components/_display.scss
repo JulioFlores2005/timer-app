@@ -1,0 +1,26 @@
+// Usa rutas relativas desde el archivo actual
+// _display.scss
+@use '../variables' as vars;
+
+.timer-display {
+  color: vars.$primary-color;
+  position: relative;
+  text-shadow: 0 2px 4px rgba(vars.$primary-color, 0.1);
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      vars.$secondary-color 50%,
+      transparent 100%
+    );
+    transform: translateX(-50%);
+    opacity: 0.6;
+  }
+}

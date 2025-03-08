@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "start": "webpack serve --open",
-  "build": "webpack --mode production",
-  "test": "jest"
+    "start": "webpack serve --open --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "babel-jest": "^29.7.0",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
     "jest": "^29.7.0",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",

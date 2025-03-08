@@ -1,0 +1,7 @@
+// ✅ Versión correcta (sin importar variables aquí)
+// Solo usa las variables cargadas globalmente
+
+body {
+  background: vars.$secondary-color; // Usa variables directamente
+  font-size: vars.$font-size-lg;
+}
