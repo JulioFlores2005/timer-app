@@ -1,7 +1,43 @@
-// ✅ Versión correcta (sin importar variables aquí)
-// Solo usa las variables cargadas globalmente
+@use './_variables' as var;
 
 body {
-  background: vars.$secondary-color; // Usa variables directamente
-  font-size: vars.$font-size-lg;
+    font-family: Arial, sans-serif;
+    background-color: var.$secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
+.timer-container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.success { background-color: #28a745; color: white; }
+.warning { background-color: #ffc107; color: black; }
+.danger { background-color: #dc3545; color: white; }
+.info { background-color: #17a2b8; color: white; }
